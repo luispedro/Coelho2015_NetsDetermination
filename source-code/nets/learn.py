@@ -87,17 +87,19 @@ class Combined(object):
                 random_state=None,
                 n_estimators=100,
                 n_jobs=1):
-        self.factory = lambda : RegionRegressor(random_state=random_state, n_estimators=n_estimators, n_jobs=n_jobs)
         if mode not in {'matrix', 'average'}:
             raise ValueError('Unknown mode "{}".'.format(mode))
         self.mode = mode
+        self.random_state = random_state
+        self.n_estimators = n_estimators
+        self.n_jobs = n_jobs
 
     def fit(self, features_labels, fractions):
         self.base = []
         n = len(features_labels[0])
         raws = []
         for ifeat in range(n):
-            r = self.factory()
+            r = RegionRegressor(random_state=self.random_state, n_estimators=self.n_estimators, n_jobs=self.n_jobs)
             features = [f[ifeat][0] for f in features_labels]
             labels = [f[ifeat][1] for f in features_labels]
             r.fit(features, labels, None)

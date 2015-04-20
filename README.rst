@@ -7,10 +7,13 @@ This package contains support material (code & data) for the paper:
     *Automatic Determination of NET (Neutrophil Extracellular Traps) Coverage
     in Fluorescent Microscopy Images* by Luis Pedro Coelho, Catarina Pato, Ana
     Friães, Ariane Neumann, Maren von Köckritz-Blickwede, Mário Ramirez, and
-    João André Carriço. Currently under review.
+    João André Carriço, Bioinformatics 2015 (accepted)
+    `DOI:10.1093/bioinformatics/btv156
+    <http://doi.org/10.1093/bioinformatics/btv156>`__.
 
-Upon publication, all the code will be made available under the MIT license.
 Use in academic publications should cite the paper above.
+
+Code is provided under the MIT license.
 
 Data
 ----
@@ -35,7 +38,7 @@ The source code is split into two directories
 
 - ``nets`` this is the library code, which is useful to adapt to new projects.
 - ``reproduce`` in this directory, you will find all the necessary code to
-reproduce all figures in the paper (including supplemental material).
+  reproduce all figures in the paper (including supplemental material).
 
 jugfile.py
     This is the central file which runs the whole analysis

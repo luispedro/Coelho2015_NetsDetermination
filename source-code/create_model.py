@@ -38,7 +38,9 @@ FEATURES = [
     ('surf(8)', lambda p,d,r: surf_grid(p,d,r, 8)),
 ]
 
-def build_model(n_estimators, verbose=True):
+def build_model(n_estimators, verbose=True, ofilename=None):
+    if ofilename is None:
+        ofilename = 'model.pkl.gz'
     fractions = []
     features = []
     images = list(listfiles())

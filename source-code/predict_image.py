@@ -34,7 +34,7 @@ def predict_image(dnafile, proteinfile, verbose=False):
     if model is None:
         if verbose:
             print("Loading model...")
-        import cPickle as pickle
+        import pickle
         model = pickle.load(gzip.open(MODEL_FILE))
     if verbose:
         print("Computing features...")

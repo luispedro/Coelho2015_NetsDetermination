@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Build NET Model')
     parser.add_argument('--n_estimators', dest='n_estimators', action='store',
-                               default=100, help='Number of estimators in random forest.\nIn the paper, 100 was used, which requires ~10 GB of RAM. A smaller number consumes less memory, but may result in less variable results. In our (unreported) testing, even a number as small as 10 was still quite good (same average performance, but higher variance). Thus, if memory usage is an issue, try a small number.')
+                               default=100, help='Number of estimators in random forest.\nIn the paper, 100 was used, which requires ~10 GB of RAM. A smaller number consumes less memory, but may result in more variable results. In our (unreported) testing, even a number as small as 10 was still quite good (same average performance, but higher variance). Thus, if memory usage is an issue, try a small number.')
 
     parser.add_argument('--quiet', dest='quiet', action='store_true',
                                 default=False, help='Turn of verbose output')

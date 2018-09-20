@@ -118,7 +118,7 @@ class Combined(object):
         raw = np.array([b.predict(fs, fix_line=False) for fs,b in zip(features, self.base)])
         if self.mode == 'average':
             raw = raw.sum()
-        pred = self.lr.predict(raw)
+        pred = self.lr.predict(np.atleast_2d(raw))
         if clip01:
             pred = np.clip(pred, 0., 1.0)
         return pred

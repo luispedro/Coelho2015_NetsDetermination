@@ -7,7 +7,7 @@ This package contains support material (code & data) for the paper:
     *Automatic Determination of NET (Neutrophil Extracellular Traps) Coverage
     in Fluorescent Microscopy Images* by Luis Pedro Coelho, Catarina Pato, Ana
     Friães, Ariane Neumann, Maren von Köckritz-Blickwede, Mário Ramirez, and
-    João André Carriço, Bioinformatics 2015 (accepted)
+    João André Carriço, Bioinformatics *2015 Jul 15;31(14):2364-70*
     `DOI:10.1093/bioinformatics/btv156
     <http://doi.org/10.1093/bioinformatics/btv156>`__.
 
